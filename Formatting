@@ -1,0 +1,29 @@
+import java.util.Scanner;
+import java.util.Formatter;
+
+public class Hrformattingprob{
+
+    public static void main(String[] args) {
+            int myNum;
+            Scanner sc=new Scanner(System.in);
+            System.out.println("================================");
+            for(int i=0;i<3;i++){
+                String s1=sc.next();
+                int x=sc.nextInt();
+		            myNum = 15 - s1.length();
+                String frmtstr = String.format("%03d",x);
+                System.out.print(s1);
+                for(int j=myNum;j>0;j--)
+                {
+                    System.out.print(" ");
+                }
+               System.out.println(frmtstr);
+                
+                //Complete this line
+                
+                
+            }
+            System.out.println("================================");
+
+    }
+}
